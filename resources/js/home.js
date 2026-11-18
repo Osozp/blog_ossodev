@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Configurar autoguardado para el TÍTULO
     setupInlineEdit("editable-title", "save-status", "title", false);
+    setupInlineEdit("editable-subtitle", "save-status", "subtitle", false);
 
     // ==========================================
     // AUTOGUARDADO PARA QUILL (BODY)

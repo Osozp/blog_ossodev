@@ -19,7 +19,7 @@
 </head>
 
 <body class="bg-gray-50 flex justify-center">
-    <section class="h-dvh flex items-center max-w-dvh">
+    <section class="mt-4 md:mt-20 flex items-center max-w-dvh">
         {{ $slot }}
     </section>
 </body>

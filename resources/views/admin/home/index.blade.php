@@ -6,6 +6,11 @@
                     class="font-poppins mb-4 text-4xl font-bold tracking-tight md:text-5xl text-gray-900 rounded p-1 cursor-pointer transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 hover:bg-gray-100">
                     {{ $home->title }}
                 </h1>
+        
+                <p contenteditable="true" id="editable-subtitle" data-id="{{ $home->id }}"
+                    class="text-xl md:text-2xl text-gray-600">
+                    {{ $home->subtitle }}
+                </p>
 
                 <span id="save-status" class="text-xs text-emerald-600 font-medium hidden">Guardando cambios...</span>
 

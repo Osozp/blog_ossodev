@@ -16,8 +16,9 @@ class HomeAdminController extends Controller
         $home = Home::firstOrCreate(
             [],
             [
-                'title' => 'Haz click para editar el titulo',
-                'body' => 'Escribe aqui el contenido principal de tu pagina...'
+                'title' => 'Que enseñas',
+                'subtitle' => 'Qeu pasa cuando aprende',
+                'body' => 'Escribe aqui el contenido principal de tu pagina...',
             ]
         );
         return view('admin.home.index', compact('home'));
@@ -62,7 +63,8 @@ class HomeAdminController extends Controller
     {
         $validated = $request -> validate([
             'title' => 'nullable|string|max:255',
-            'body' => 'nullable|string'
+            'subtitle' => 'nullable|string|max:255',
+            'body' => 'nullable|string',
         ]);
 
         $home->update(array_filter($validated, fn($value) => !is_null($value)));

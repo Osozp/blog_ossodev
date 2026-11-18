@@ -27,11 +27,13 @@
              </button>
          </div>
      </div>
-     <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer">
-         Nos importa la protección de sus datos.<a href="#" class="font-medium text-primary-600 hover:underline">
+     {{-- <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer">
+         Nos importa la protección de sus datos.
+         <a href="#" class="font-medium text-primary-600 hover:underline">
              Lea nuestra
              política de privacidad.
-         </a></div>
+         </a>
+     </div> --}}
  </form>
  @if (session('success'))
      <div class="mt-4 flex items-center rounded-lg border border-green-200 bg-green-50 p-4 text-sm text-green-800"
